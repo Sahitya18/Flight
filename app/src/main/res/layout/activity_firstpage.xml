@@ -4,38 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Page">
+    tools:context=".firstpage">
+
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="192dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="265dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
-        android:layout_marginBottom="370dp"
-        android:text="HOME PAGE"
+        android:id="@+id/bookFlightText"
+        android:layout_width="356dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="673dp"
+        android:gravity="center|start"
+        android:includeFontPadding="false"
+        android:text="@string/book_your_flight"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="638dp"
+        android:gravity="clip_horizontal|center|center_vertical"
+        android:text="@string/one_way"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookFlightText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="638dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/round_trip"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookFlightText"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/bookFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginRight="164dp"
-        android:layout_marginBottom="287dp"
-        android:text="Button"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="619dp"
+        android:text="@string/from"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bookTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="368dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="619dp"
+        android:text="@string/to"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <ListView
+        android:id="@+id/cityListFrom"
+        android:layout_width="265dp"
+        android:layout_height="616dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ListView
+        android:id="@+id/cityListTo"
+        android:layout_width="265dp"
+        android:layout_height="616dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookFrom"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,4 +21,9 @@
     <string name="female">Female</string>
     <string name="others">Others</string>
     <string name="dob">DOB</string>
+    <string name="book_your_flight">Book Your Flight</string>
+    <string name="one_way">One Way</string>
+    <string name="round_trip">ROUND TRIP</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
 </resources>
