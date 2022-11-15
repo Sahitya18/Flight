@@ -26,4 +26,14 @@
     <string name="round_trip">ROUND TRIP</string>
     <string name="from">From</string>
     <string name="to">To</string>
+    <string name="departure">Departure</string>
+    <string name="adults">Adults</string>
+    <string name="children">Children</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="passenger_s">Passenger(s)</string>
+    <string name="return1">Return</string>
+    <string name="_0">0</string>
+    <string name="book">Book</string>
+    <string name="_1">1</string>
 </resources>

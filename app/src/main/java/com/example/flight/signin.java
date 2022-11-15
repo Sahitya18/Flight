@@ -74,10 +74,11 @@ public class signin extends AppCompatActivity {
             mAuth.signInWithEmailAndPassword(email_string,pass_string).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    Toast.makeText(signin.this,"lkjhgfdsa",Toast.LENGTH_SHORT).show();
                     if(task.isSuccessful())
                     {
                         Toast.makeText(signin.this, "sign in", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(signin.this,trial.class));
+                        startActivity(new Intent(signin.this,firstpage.class));
                     }else{
                         Toast.makeText(signin.this, "Error"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
